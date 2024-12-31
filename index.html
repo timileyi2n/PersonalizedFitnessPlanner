@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalizedFitnessPlanner</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+body{
+    background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+}
+    section {
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        background: #fff;
+        margin: 7rem 0 0 0;
+        padding: 4rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    button {
+        border: none;
+        padding: .8rem 1.2rem;
+        border-radius: 9px;
+        margin: .5rem 1rem;
+        cursor: pointer;
+    }
+
+    .paragraph {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 1.3rem 0 .5rem 0;
+    }
+
+    input {
+        height: 1.9rem;
+        margin: 1rem 0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: .6rem 1.5rem .6rem .4rem;
+        width: 17rem;
+    }
+    .display {
+        margin: 7rem 0 0 0;
+        padding: 4rem;
+        border-radius: 10px;
+        background: #fff;
+    }
+    .display p{
+        margin: 1rem 0 0 0;
+       text-align: left;
+        font-size: 1rem;
+    }
+    .font{
+        font-weight: 600;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+</style>
+
+<body>
+  <section>
+    <div class="main">
+        <div class="header">
+            <h1>Personalized Fitness Planner</h1>
+        </div>
+        <div>
+            <p class="paragraph">Fitness Goal</p>
+            <button onclick="clicked('weightLoss')" class="weightLoss">Weight Loss</button>
+            <button onclick=" clicked('muscleGain')" class="muscleGain">Muscle Gain</button>
+            <button onclick=" clicked('generalFitness')" class="generalFitness">General Fitness</button>
+        </div>
+        <div>
+            <input type="text" class="fitnessGoal" placeholder="Please click on button above">
+        </div>
+        <div>
+            <p class="paragraph">Age</p>
+            <input type="text" class="age" placeholder="15 above">
+        </div>
+        <div>
+            <p class="paragraph">Fitness Level</p>
+            <button onclick="clicked('beginner')">Beginner</button>
+            <button onclick="clicked('Intermediate')">Intermediate</button>
+            <button onclick="clicked('Advance')">Advance</button>
+        </div>
+        <div><input type="text" class="fitnessLevel" placeholder="Please click on button above"></div>
+        <div>
+            <button onclick="personalizedFitnessPlanner()">Submit</button>
+        </div>
+
+    </div>
+  
+  </section>
+  <div>
+  <section>
+    <div class="display"></div>
+  </section>
+</div>
+</body>
+<script src="script.js">
+
+</script>
+
+</html>
